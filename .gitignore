@@ -1,0 +1,5 @@
+# patterns ignored:
+tmp/*
+
+# Exceptions:
+!/tmp/.gitkeep
