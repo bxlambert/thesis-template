@@ -1,0 +1,43 @@
+%==== settings ===============================================================%
+
+
+%---- !! Important remarks !! ------------------------------------------------%
+% THIS FILE MUST BE INCLUDED PRIOR TO OTHER STYLE FILES because it defines commands that are used in other files of the project.
+
+% The purpose of this file is to CENTRALIZE SOME USEFUL TEXT VALUES, in order to avoid looking for those values in several files.
+
+% Some commands are first defined and set with 'default' values. These commands can be redefined below, THEY SHOULD NOT BE CHANGED DIRECTLY.
+
+% The "newcommands" that are defined here CANNOT BE SUPPRESSED because they are used elsewhere in the project. They can optionally be put to blank. "renewcommands" can obviously be suppressed.
+%-----------------------------------------------------------------------------%
+
+
+%---- default values (do not touch it) ---------------------------------------%
+\newcommand{\projectTitle}{\title}
+\newcommand{\projectShortTitle}{\projectTitle}
+\newcommand{\projectDate}{\today}
+\newcommand{\bibName}{\bibname}
+%-----------------------------------------------------------------------------%
+
+
+%-- author infos -------------------------------------------------------------%
+\newcommand{\authorLastName}{Lambert}
+\newcommand{\authorFirstName}{Benoît-Xavier}
+%-----------------------------------------------------------------------------%
+
+
+%---- project infos ----------------------------------------------------------%
+\renewcommand{\projectTitle}{\LaTeX{} Thesis Template}
+\renewcommand{\projectDate}{\today}
+
+\renewcommand{\bibName}{References}
+\newcommand{\appendixName}{Appendix}
+%-----------------------------------------------------------------------------%
+
+
+%---- pdf properties ---------------------------------------------------------%
+\newcommand{\pdfTitle}{\projectTitle}
+\newcommand{\pdfSubject}{A template for writing a thesis in LaTeX.}
+\newcommand{\pdfKeywords}{{latex} {template} {thesis}}
+\newcommand{\pdfIsDraft}{false}
+%-----------------------------------------------------------------------------%
