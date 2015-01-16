@@ -55,6 +55,13 @@
 %-----------------------------------------------------------------------------%
 
 
+%---- appendix customization -------------------------------------------------%
+\let\oldappendix\appendix
+\newcommand{\newappendix}{\oldappendix\renewcommand\chaptername{\appendixName}}
+\let\appendix\newappendix
+%-----------------------------------------------------------------------------%
+
+
 %---- low-level customizations (be careful!) ---------------------------------%
 \input{style-special}
 %-----------------------------------------------------------------------------%
