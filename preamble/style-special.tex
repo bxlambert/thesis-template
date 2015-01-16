@@ -4,6 +4,24 @@
 % !! BE CAREFUL - low-level customizations.
 
 
+%---- redefining the "include" command ---------------------------------------%
+\makeatletter
+    \let\includeOriginal\include
+    \renewcommand{\include}[1]{%
+        \clearpage{%
+            \pagestyle{empty}%
+            \cleardoublepage%
+        }%
+        \typeout{}%
+        \typeout{============================================================}%
+        \typeout{  --> Included file: "#1"}%
+        \typeout{============================================================}%
+        \includeOriginal{#1}%
+    }
+\makeatother
+%-----------------------------------------------------------------------------%
+
+
 %---- sections style (redefining from "book.cls") ----------------------------%
 \makeatletter
     \renewcommand\section{%
