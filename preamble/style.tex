@@ -1,4 +1,16 @@
 %==== general styles =========================================================%
 
 
-%---- add style below --------------------------------------------------------%
+%---- [fancyhdr] -------------------------------------------------------------%
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\textsc{\chaptername~\thechapter~:} #1}{}}
+
+\renewcommand\headrulewidth{0.3pt}
+\fancyhead[LE]{\small{\thepage}}
+\fancyhead[RE]{\small{\textsc{<Document title>}}}
+\fancyhead[LO]{\small{\leftmark}}
+\fancyhead[RO]{\small{\thepage}}
+
+\fancyfoot{}
+\renewcommand\footrulewidth{0pt}
+%-----------------------------------------------------------------------------%
