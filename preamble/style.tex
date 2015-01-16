@@ -4,6 +4,27 @@
 % For custom commands, see "config.tex".
 
 
+%---- [hyperref] -------------------------------------------------------------%
+\hypersetup{%
+    unicode=true,
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue,
+    pdfhighlight=/O,
+    pdftitle={\pdfTitle},
+    pdfsubject={\pdfSubject},
+    pdfauthor={\authorFirstName{} \authorLastName},
+    pdfkeywords={\pdfKeywords},
+    draft=\pdfIsDraft
+}
+\urlstyle{same}
+
+% draft=true  : no links and no properties written in the pdf file.
+% draft=false : clickable links (ToC, refs etc.), properties written in pdf file.
+%-----------------------------------------------------------------------------%
+
+
 %---- [geometry] -------------------------------------------------------------%
 \geometry{
     tmargin = 2.5cm,
