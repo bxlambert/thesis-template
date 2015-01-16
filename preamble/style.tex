@@ -4,7 +4,7 @@
 %---- [geometry] -------------------------------------------------------------%
 \geometry{
     tmargin = 2.5cm,
-    bmargin = 2.5cm,
+    bmargin = 3.0cm,
     lmargin = 2.5cm,
     rmargin = 2.5cm
 }
@@ -13,6 +13,9 @@
 
 %---- [fancyhdr] -------------------------------------------------------------%
 \pagestyle{fancy}
+\setlength{\headheight}{2.2em}
+\setlength{\headsep}{2em}
+
 \renewcommand{\chaptermark}[1]{\markboth{\textsc{\chaptername~\thechapter~:} #1}{}}
 
 \renewcommand\headrulewidth{0.3pt}
@@ -24,5 +27,5 @@
 \fancyfoot{}
 \renewcommand\footrulewidth{0pt}
 
-% Must be customized after the geometry package configuration, in order to avoid unwanted length differences between the headers and the body of the document.
+% This must be customized after the geometry package configuration, in order to avoid unwanted length differences between the headers and the body of the document.
 %-----------------------------------------------------------------------------%
